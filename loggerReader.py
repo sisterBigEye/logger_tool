@@ -1,16 +1,9 @@
 # -*- coding:utf-8 -*-
 
 import paramiko
+from config import remotedir,remotefile,password,port,hostname,username,command
 
 def get_1000_lines():
-
-    remotedir = '/home/ftp/lj/develer/logs'
-    remotefile = '/home/ftp/lj/develer/logs/twicker.log'
-    hostname = '47.100.21.123'
-    port = 22
-    username = 'root'
-    password = 'asd467461dsa'
-
 
     paramiko.util.log_to_file('paramiko.log')
     s = paramiko.SSHClient()
@@ -18,7 +11,7 @@ def get_1000_lines():
 
     s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     s.connect(hostname,port,username,password)
-    command =  'tail -100 /home/ftp/lj/develer/logs/posts/posts.log'#days/twicker.log'#posts/posts.log'  #/home/ftp/lj/develer/uwsgi/uwsgi.log，counts
+    #days/twicker.log'#posts/posts.log'  #/home/ftp/lj/develer/uwsgi/uwsgi.log，counts
     stdin,stdout,stderr = s.exec_command(command)
     #print(2,stdout.read())
     logs = stdout.readlines()
@@ -28,3 +21,15 @@ def get_1000_lines():
         # print(logs[i].rstrip())
     return logs
 
+
+
+
+
+def getfile():
+    client = paramiko.SSHClient()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    client.connect(hostname, port, username, password, compress=True)
+    sftp_client = client.open_sftp()
+    remote_file = sftp_client.open(remotefile)#文件路径
+    remote_file.close()
+    return remotefile
