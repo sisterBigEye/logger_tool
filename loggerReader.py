@@ -3,15 +3,6 @@
 import paramiko
 
 def get_1000_lines():
-
-    remotedir = '/home/ftp/lj/develer/logs'
-    remotefile = '/home/ftp/lj/develer/logs/twicker.log'
-    hostname = 'xx.xxx.xxx'
-    port = 22
-    username = 'xxx'
-    password = 'xxxxx'
-
-
     paramiko.util.log_to_file('paramiko.log')
     s = paramiko.SSHClient()
     s.load_system_host_keys()
