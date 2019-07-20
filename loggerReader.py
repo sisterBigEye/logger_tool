@@ -6,10 +6,10 @@ def get_1000_lines():
 
     remotedir = '/home/ftp/lj/develer/logs'
     remotefile = '/home/ftp/lj/develer/logs/twicker.log'
-    hostname = '47.100.21.123'
+    hostname = 'xx.xxx.xxx'
     port = 22
-    username = 'root'
-    password = 'asd467461dsa'
+    username = 'xxx'
+    password = 'xxxxx'
 
 
     paramiko.util.log_to_file('paramiko.log')
