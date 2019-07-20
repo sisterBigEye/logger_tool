@@ -1,8 +1,5 @@
 # -*- coding:utf-8 -*-
 
-# -*- coding:utf-8 -*-
-
-#单选框
 import tkinter
 from tkinter import *
 import loggerReader
