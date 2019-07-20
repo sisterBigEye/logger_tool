@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3dcd1432-2a07-4280-a48b-90483cae4393" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loggerReader.py" afterPath="$PROJECT_DIR$/loggerReader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tk_logger.py" afterPath="$PROJECT_DIR$/tk_logger.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="logger_tool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="loggerReader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loggerReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4670391">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.1273743">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -490,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loggerReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4670391">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.1273743">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
